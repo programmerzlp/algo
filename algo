@@ -211,7 +211,7 @@ Name the vpn server:
     10. Singapore
     11. Toronto
     12. Bangalore
-    
+
 Enter the number of your desired region:
 [7]: " -r region
   region=${region:-7}
@@ -273,7 +273,7 @@ Name the vpn server:
     14.  ap-southeast-2      Asia Pacific (Sydney)
     15.  ap-south-1          Asia Pacific (Mumbai)
     16.  sa-east-1           South America (São Paulo)
-    
+
 Enter the number of your desired region:
 [1]: " -r aws_region
   aws_region=${aws_region:-1}
@@ -335,7 +335,7 @@ Name the vpn server:
     10.  eu-central-1        EU (Frankfurt)
     11.  eu-west-1           EU (Ireland)
     12.  eu-west-2           EU (London)
-    
+
 Enter the number of your desired region:
 [1]: " -r algo_region
 algo_region=${algo_region:-1}
@@ -461,7 +461,7 @@ Name the vpn server:
     34. South America   (São Paulo A)
     35. South America   (São Paulo B)
     36. South America   (São Paulo C)
-    
+
 Please choose the number of your zone. Press enter for default (#14) zone.
 [14]: " -r region
   region=${region:-14}
@@ -570,13 +570,12 @@ Enter the number of your desired provider
 
   case "$N" in
     1) digitalocean; ;;
-    2) lightsail; ;;
-    3) ec2; ;;
-    4) azure; ;;
-    5) gce; ;;
-    6) scaleway; ;;
-    7) openstack; ;;
-    8) non_cloud; ;;
+    2) ec2; ;;
+    3) azure; ;;
+    4) gce; ;;
+    5) scaleway; ;;
+    6) openstack; ;;
+    7) non_cloud; ;;
     *) exit 1 ;;
   esac
 
